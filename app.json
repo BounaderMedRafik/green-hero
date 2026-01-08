@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "GreenHero",
+    "slug": "green-hero",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/gh/gh-square.png",
+    "scheme": "greenhero",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "icon": "./assets/gh/gh-square.png"
+    },
+    "android": {
+      "package": "com.yourname.greenhero",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/gh/gh-square.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/gh/gh-square.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/gh/gh-rounded.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/gh/gh-rounded.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "59a83c89-76f6-492f-9be8-142943f9b897"
+      }
+    }
+  }
+}
